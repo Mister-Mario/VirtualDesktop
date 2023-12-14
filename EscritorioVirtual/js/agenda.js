@@ -19,7 +19,7 @@ class Agenda{
             this.last_api_call = new Date();
             $.ajax({
                     dataType: "xml",
-                    url : "http://ergast.com/api/f1/current",
+                    url : "https://ergast.com/api/f1/current",
                     method : 'GET',                          
                     }).done(function(data){
                         agenda2.saveData(data);
