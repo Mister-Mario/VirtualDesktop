@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+<rutas>
+   <ruta fechaInicio="Cualquier día" horaInicio="7:30">
+        <nombre>Túnez capital</nombre>
+        <tipo>Arquitectónica</tipo>
+        <medioTransporte>A pie</medioTransporte>
+        <duracion>1/2 día</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>
+            La capital tunecina, es, podríamos decir, un tercio mediterránea, un tercio europea y un tercio africana. Esta ciudad tiene algunos de los contrastes más fuertes e interesantes del norte de África.
+             La mezcla de culturas e influencias es clara y un paseo por sus calles lo demuestra.
+        </descripcion>
+        <personasAdecuadas>Todo tipo de personas</personasAdecuadas>
+        <lugarInicio>Túnez</lugarInicio>
+        <direccionInicio>30 Rue Jamaa Ez Zitouna, Tunis, Túnez</direccionInicio>
+        <coordenadas longitud="36.79774470644965" latitud="10.171288497323301" altitud="4"></coordenadas>
+        <referencia>https://www.google.com/maps/place/Mezquita+Zitouna/@36.7955421,10.1698796,17z/data=!4m6!3m5!1s0x12fd34754f0de50d:0xd6055eb2c24a4f31!8m2!3d36.7973267!4d10.1712377!16s%2Fm%2F05f50wj?entry=ttu</referencia>
+        <referencia>https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html</referencia>
+        <referencia>https://sobretunez.com/2009/11/05/dar-ben-abdallah-el-museo-de-las-costumbres/</referencia>
+        <recomendacion>8</recomendacion>
+         <hito>
+            <nombre>Mezquita Zitouna</nombre>
+            <descripcion>Mezquita histórica e importante universidad islámica, la más antigua de Túnez, con un minarete de 43 m.</descripcion>
+            <coordenadas longitud="36.79774470644965" latitud="10.171288497323301" altitud="4"></coordenadas>
+            <distanciaHitoAnterior unidades="km">0</distanciaHitoAnterior>
+            <foto>multimedia/Mezquita.jpeg</foto>
+        </hito>
+        <hito>
+            <nombre>Palacio Dar ben Abdallah</nombre>
+            <descripcion>Es el museo de las artes y el patrimonio tradicional de Túnez. Su arquitectura es uno de los ejemplos más hermosos de las construcciones del siglo XVII, ubicado en el centro de la Medina de Túnez. En su colección se muestran la herencia de los años 
+            y el nombre del museo es el del antiguo dueño del palacio en el que se encuentra instalado.</descripcion>
+            <coordenadas longitud="36.79444648864582" latitud="10.173785474972679" altitud="4"></coordenadas>
+            <distanciaHitoAnterior unidades="km">0.6</distanciaHitoAnterior>
+            <foto>multimedia/Dar_Ben_Abdallah.jpg</foto>
+        </hito>
+    </ruta>
+
+    <ruta fechaInicio="Cualquier día" horaInicio="7:30">
+        <nombre>Alrededores de Sfax</nombre>
+        <tipo>Paisajística</tipo>
+        <tipo>Arquitectónica</tipo>
+        <medioTransporte>Coche y ferry</medioTransporte>
+        <duracion>1 día</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>
+            Ruta que combina mar y tierra recorrindo lugares historicos del pais de Túnez y sus playas.
+        </descripcion>
+        <personasAdecuadas>Personas en buena forma física</personasAdecuadas>
+        <lugarInicio>Sfax</lugarInicio>
+        <direccionInicio>Jardin de la mère et de l'enfant</direccionInicio>
+        <coordenadas longitud="34.73924059047236" latitud="10.760886967134985" altitud="0"></coordenadas>
+        <referencia>https://www.google.com/maps/place/Mother+and+Child+Garden/@34.7389626,10.7584601,17.25z/data=!4m15!1m8!3m7!1s0x12fd337f5e7ef543:0xd671924e714a0275!2zVMO6bmV6!3b1!8m2!3d36.8064948!4d10.1815316!16zL20vMGZ0bjg!3m5!1s0x1301d2d3619d1eed:0x3d3ac9a16d0b5a8b!8m2!3d34.7391014!4d10.7608763!16s%2Fg%2F1ptxglkt0?entry=ttu</referencia>
+        <referencia>https://www.somoutdoors.com/lugares-donde-viajar/tunez-por-tu-cuenta/</referencia>
+        <referencia>https://blog-tunez.com/otros-destinos-de-tunez/islas-kerkennah/</referencia>
+        <recomendacion>7</recomendacion>
+        <hito>
+            <nombre>Anfiteatro en El Djem</nombre>
+            <descripcion>El anfiteatro en El Djem fue construido por los romanos bajo las órdenes del procónsul Gordiano, quién fue proclamado emperador en Thysdrus alrededor del 238 y era principalmente utilizado para espectáculos de gladiadores y carreras de carros de pequeño formato. </descripcion>
+            <coordenadas longitud="35.2982756564453" latitud="10.706617336438631" altitud="35.3"></coordenadas>
+            <distanciaHitoAnterior unidades="km">74,2</distanciaHitoAnterior>
+            <foto>multimedia/djemjpg.jpg</foto>
+        </hito>
+        <hito>
+            <nombre>Islas Kerkennah</nombre>
+            <descripcion>La sensación de pasar unos días en las islas de Kerkennah es similar a la de perderse en otras orillas del Mar Mediterráneo, ya sea en Sicilia, Cerdeña o cualquier isla griega.</descripcion>
+            <coordenadas longitud="34.72991197588472" latitud="11.140731886583168" altitud="0"></coordenadas>
+            <distanciaHitoAnterior unidades="km">120km</distanciaHitoAnterior>
+            <foto>multimedia/kerkennah.jpg</foto>
+        </hito>
+    </ruta>
+
+    <ruta fechaInicio="Cualquier día" horaInicio="7:30">
+        <nombre>Douz</nombre>
+        <tipo>Paisajística</tipo>
+        <medioTransporte>A pie y camello</medioTransporte>
+        <duracion>Día completo</duracion>
+        <agencia>sahara-tunisia</agencia>
+        <descripcion>
+            Ruta que combina mar y tierra recorrindo lugares historicos del pais de Túnez y sus playas.
+        </descripcion>
+        <personasAdecuadas>Personas en buena forma física</personasAdecuadas>
+        <lugarInicio>Sahara-tunisia</lugarInicio>
+        <direccionInicio>Souk Douz, 4260, Túnez</direccionInicio>
+        <coordenadas longitud="33.457376514557566" latitud="9.025019626580125" altitud="64"></coordenadas>
+        <referencia>https://www.sahara-tunisia.com/</referencia>
+        <referencia>https://es.wikipedia.org/wiki/S%C3%A1hara</referencia>
+        <referencia>https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html</referencia>
+        <referencia>https://www.google.com/maps/place/Sahara+Desert+Tunisia+%E1%83%A6/@33.4578928,9.0217406,16.75z/data=!4m15!1m8!3m7!1s0x125687f0a48f8aa3:0xf20af06731ebe68d!2zRG91eiwgVMO6bmV6!3b1!8m2!3d33.4614354!4d9.0294708!16zL20vMDQzMXo4!3m5!1s0x125687f0052ca891:0x547cf34c40e7aa1f!8m2!3d33.4571621!4d9.0250329!16s%2Fg%2F11ft2cj7zt?entry=ttu</referencia>
+        <recomendacion>10</recomendacion>
+        <hito>
+            <nombre>Desierto del Sahara</nombre>
+            <descripcion>El desierto del Sahara es el desierto cálido más grande del mundo, con más de 9 400 000 km2 de superficie. </descripcion>
+            <coordenadas longitud="33.479258386747844" latitud="9.0708610000714013" altitud="63"></coordenadas>
+            <distanciaHitoAnterior unidades="km">6</distanciaHitoAnterior>
+            <foto>multimedia/deserto-sahara.jpg</foto>
+        </hito>
+    </ruta>
+</rutas>
