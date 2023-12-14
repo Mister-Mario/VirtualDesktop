@@ -21,12 +21,13 @@ class Api{
             var p3 = document.createElement("p");
             p3.textContent = "El formato interno del fichero deberá de ser de una letra entre: C (para circulo), S (para cuadrado), R (para rectangulo), T (para triangulo) separados por ;";
             document.querySelector("main").append(p3);
-            var p2 = document.createElement("p");
+            var lbl = document.createElement("label");
+            lbl.textContent = "Ficheros: ";
             var input = document.createElement("input");
             input.setAttribute("type", "file");
             input.setAttribute("onchange", "api.readInputFile(this.files);");
-            p2.append(input);
-            document.querySelector("main").append(p2);
+            lbl.append(input);
+            document.querySelector("main").append(lbl);
         }
         else{
             p.textContent = "¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!";
@@ -86,13 +87,12 @@ class Api{
 
     createCanvas(){
         var section = document.querySelector("section[data-type = playground]");
-        if(section)
-            section.innerHTML = "";
-        else{
+        if(!section){
             section = document.createElement("section");
             section.setAttribute("data-type", "playground");
         }
         
+        section.innerHTML = "<h3>Juego de figuras</h3>";
 
         var canvas = document.createElement("canvas");
         canvas.setAttribute("data-figure", "S");
