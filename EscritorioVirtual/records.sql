@@ -1,1 +1,0 @@
-CREATE TABLE `records`.`registro` (`nombre` VARCHAR(255) NOT NULL , `apellidos` VARCHAR(255) NOT NULL , `nivel` VARCHAR(255) NOT NULL , `tiempo` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
