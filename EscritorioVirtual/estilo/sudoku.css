@@ -1,0 +1,40 @@
+main {
+    width: 500px;
+    height: 500px;
+    border: 0.3em solid #000;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    border: 0.1em solid #808080;
+    margin: 0;
+}
+
+p[data-state = "clicked"]{
+    background-color: #013A20;
+}
+
+p:nth-child(3n){
+    border-right: #000 solid 0.2em;
+}
+
+p:nth-child(n + 19):nth-child(-n+27){
+    border-bottom: #000 solid 0.2em;
+}
+
+p:nth-child(n + 46):nth-child(-n+54){
+    border-bottom: #000 solid 0.2em;
+}
+
+
+
+
+
