@@ -1,0 +1,25 @@
+section[data-type = noticia]{
+    border: none;
+    background-color: #fff;
+}
+
+p[data-type = "titulo"]{
+    margin-bottom: 0.5%;
+    font-size: larger;
+}
+
+p[data-type = subtitulo]{
+    font-weight: lighter;
+    margin-top: 0.5%;
+} 
+p[data-type = contenido]{
+    font-weight: lighter;
+}
+
+p[data-type = autor]{
+    text-align: right;
+}
+
+section[data-type = "creador de noticias"]{
+    border: none;
+}
