@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id='Universidad de Oviedo'>
+<Placemark>
+<name>Alrededores de Sfax</name>
+<description>
+            Ruta que combina mar y tierra recorrindo lugares historicos del pais de Túnez y sus playas.
+        </description>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+10.706617336438631,35.2982756564453,35.3
+10.706617336438631,35.2982756564453,35.3
+10.761733371909365,34.73615780480023,0
+11.140731886583168,34.72991197588472,0
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style id='redLine'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
