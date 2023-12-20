@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Escritorio Virtual - Meteorología</title>
+    <meta name="author" content="Mario Junquera Rojas">
+    <meta name="keywords" content="aquí cada documento debe tener la lista
+    de las palabras clave del mismo separadas por comas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+    <script src="js/pais.js"></script>
+    <link rel="icon" href="multimedia/favicon.ico">
+
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual - Meteorología</h1>
+        <nav>
+            <a href="index.html" accesskey="I" tabindex="1"> Inicio</a>
+            <a href="sobremi.html" accesskey="S" tabindex="2"> Sobre Mi</a>
+            <a href="noticias.html" accesskey="N" tabindex="3"> Noticias</a>
+            <a href="agenda.html" accesskey="A" tabindex="4"> Agenda</a>
+            <a href="meteorologia.html" accesskey="M" tabindex="5"> Meteorología</a>
+            <a href="viajes.php" accesskey="V" tabindex="6"> Viajes</a>
+            <a href="juegos.html" accesskey="J" tabindex="7"> Juegos</a>
+        </nav>
+    </header> 
+    <main><h2><script>document.write(pais.getNombrePais())</script>Túnez</h2>
+        <p>Nombre Capital: <script>document.write(pais.getNombreCapital())</script>Túnez</p>
+        <script>document.write(pais.getInformacionSecundaria())</script><ul><li>Población: 12,26 millones</li><li>Forma gobierno: Republica</li><li>Religión mayoritaria: Islam</li></ul>
+        <script>pais.writeCoordenadas();</script><p>Coordenadas de Túnez: 36.81550692588577,10.183760414468203,4.0</p>
+    <section data-type="pronostico"><h3>Pronostico</h3><section data-i="0" data-type="tiempo"><h4>Día: 1</h4><img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Icono que representa el pronostico del tiempo"><section data-i="0" data-type="datos"><h4>2023-12-20 12:00:00</h4><p>🔥Temperatura máxima: 16.97</p><p>❄ Temepatura mínima: 16.8</p><p>☂ Lluvia: 0</p><p>💧 Humedad: 67%</p></section></section><section data-i="8" data-type="tiempo"><h4>Día: 2</h4><img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Icono que representa el pronostico del tiempo"><section data-i="8" data-type="datos"><h4>2023-12-21 12:00:00</h4><p>🔥Temperatura máxima: 15.48</p><p>❄ Temepatura mínima: 15.48</p><p>☂ Lluvia: 0.19</p><p>💧 Humedad: 64%</p></section></section><section data-i="16" data-type="tiempo"><h4>Día: 3</h4><img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Icono que representa el pronostico del tiempo"><section data-i="16" data-type="datos"><h4>2023-12-22 12:00:00</h4><p>🔥Temperatura máxima: 16.52</p><p>❄ Temepatura mínima: 16.52</p><p>☂ Lluvia: 0.19</p><p>💧 Humedad: 71%</p></section></section><section data-i="24" data-type="tiempo"><h4>Día: 4</h4><img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Icono que representa el pronostico del tiempo"><section data-i="24" data-type="datos"><h4>2023-12-23 12:00:00</h4><p>🔥Temperatura máxima: 17.57</p><p>❄ Temepatura mínima: 17.57</p><p>☂ Lluvia: 0</p><p>💧 Humedad: 64%</p></section></section><section data-i="32" data-type="tiempo"><h4>Día: 5</h4><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Icono que representa el pronostico del tiempo"><section data-i="32" data-type="datos"><h4>2023-12-24 12:00:00</h4><p>🔥Temperatura máxima: 18.12</p><p>❄ Temepatura mínima: 18.12</p><p>☂ Lluvia: 0</p><p>💧 Humedad: 58%</p></section></section></section></main>
+    
+    <script>
+        pais.getPrevision();
+    </script>
+
+
+</body></html>

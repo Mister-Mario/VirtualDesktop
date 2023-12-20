@@ -1,0 +1,45 @@
+/*
+Mario Junquera Rojas UO287557
+*/
+/*Especificidad: 001*/
+main {
+    width: 500px;
+    height: 500px;
+    border: 0.3em solid #000;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+}
+/*Especificidad: 001*/
+h3 {
+    text-align: center;
+}
+/*Especificidad: 001*/
+p {
+    text-align: center;
+    font-size: 2em;
+    border: 0.1em solid #808080;
+    margin: 0;
+}
+/*Especificidad: 011*/
+p[data-state = "clicked"]{
+    color: #fff;
+    background-color: #013A20;
+}
+/*Especificidad: 011*/
+p:nth-child(3n){
+    border-right: #000 solid 0.2em;
+}
+/*Especificidad: 021*/
+p:nth-child(n + 19):nth-child(-n+27){
+    border-bottom: #000 solid 0.2em;
+}
+/*Especificidad: 021*/
+p:nth-child(n + 46):nth-child(-n+54){
+    border-bottom: #000 solid 0.2em;
+}
+
+
+
+
+

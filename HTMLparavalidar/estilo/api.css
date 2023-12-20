@@ -1,0 +1,39 @@
+/*
+Mario Junquera Rojas UO287557
+*/
+/*Especificidad: 011*/
+section[data-type = playground]{
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+/*Especificidad: 011*/
+p[data-type = "guia ordenador"]{
+    visibility: visible;
+}
+
+/*Especificidad: 011*/
+p[data-type = "guia pantalla pequeña"]{
+    visibility: hidden;
+}
+
+/*Especificidad: 011*/
+section[data-type=botonera]{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 799px) {
+    /*Especificidad: 011*/
+    p[data-type = "guia pantalla pequeña"]{
+        visibility: visible; /*Se redefine*/
+    }
+    /*Especificidad: 011*/
+    p[data-type = "guia ordenador"]{
+        visibility: hidden; /*Se redefine*/
+    }
+    /*Especificidad: 011*/
+    section[data-type=botonera]{
+        visibility: visible; /*Se redefine*/
+    }
+}
