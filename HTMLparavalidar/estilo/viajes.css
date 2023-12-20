@@ -115,4 +115,14 @@ section[data-type='ruta xml'] a:hover {
     color: white;
     background-color: #013A20;
 }
+/*Especificidad: 022*/
+section[data-type='ruta xml'] a:focus {
+    color: white;
+    background-color: #013A20;
+}
+/*Especificidad: 022*/
+section[data-type='ruta xml'] a:active {
+    color: white;
+    background-color: #013A20;
+}
 
