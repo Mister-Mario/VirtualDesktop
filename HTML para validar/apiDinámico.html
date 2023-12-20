@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Escritorio Virtual - Juegos</title>
+    <meta name="author" content="Mario Junquera Rojas">
+    <meta name="keywords" content="aquí cada documento debe tener la lista
+    de las palabras clave del mismo separadas por comas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/juegos.css">
+    <link rel="stylesheet" type="text/css" href="estilo/api.css">
+    <link rel="icon" href="multimedia/favicon.ico">
+    <script src="js/api.js"></script>
+
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual - Juegos - Figuras</h1>
+        <nav>
+            <a href="index.html" accesskey="I" tabindex="1"> Inicio</a>
+            <a href="sobremi.html" accesskey="S" tabindex="2"> Sobre Mi</a>
+            <a href="noticias.html" accesskey="N" tabindex="3"> Noticias</a>
+            <a href="agenda.html" accesskey="A" tabindex="4"> Agenda</a>
+            <a href="meteorologia.html" accesskey="M" tabindex="5"> Meteorología</a>
+            <a href="viajes.php" accesskey="V" tabindex="6"> Viajes</a>
+            <a href="juegos.html" accesskey="J" tabindex="7"> Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Menu de Juegos</h2>
+        <nav id="Enlace">
+            <a href="memoria.html" accesskey="R" tabindex="8"> Memoria</a>
+            <a href="sudoku.html" accesskey="K" tabindex="9"> Sudoku</a>
+            <a href="crucigrama.php" accesskey="C" tabindex="10"> Crucigrama</a>
+            <a href="api.html" accesskey="P" tabindex="11"> Figuras</a>
+            <a href="php/restaurante.php" accesskey="T" tabindex="12"> Restaurante </a>
+        </nav>
+    </section>
+    <main><p>Este navegador soporta el API File</p><p>El formato interno del fichero deberá de ser de una letra entre: C (para circulo), S (para cuadrado), R (para rectangulo), T (para triangulo) separados por ;</p><label>Ficheros: <input type="file" onchange="api.readInputFile(this.files);"></label><p data-type="guia ordenador">Guia del juego: El objetivo es arrastrar la figura rellena al hueco correspondiente</p><p data-type="guia pantalla pequeña">Guia del juego: El objetivo es pulsar el boton con el nombre de la figura rellena</p><section data-type="botonera"><h2>Botonera</h2><button onclick="api.checkBoton('C')">Circulo</button><button onclick="api.checkBoton('S')">Cuadrado</button><button onclick="api.checkBoton('R')">Rectangulo</button><button onclick="api.checkBoton('T')">Triangulo</button></section><p data-type="puntuacion" data-puntos="0">Figuras arrastradas: 0</p><section data-type="playground"><h3>Juego de figuras</h3><canvas data-figure="S" data-type="square" ondragover="api.allowDrop(event)" ondrop="api.drop(event)"></canvas><canvas data-figure="R" data-type="rectangle" ondragover="api.allowDrop(event)" ondrop="api.drop(event)"></canvas><canvas data-figure="T" data-type="triangle" ondragover="api.allowDrop(event)" ondrop="api.drop(event)"></canvas><canvas data-figure="C" data-type="circle" ondragover="api.allowDrop(event)" ondrop="api.drop(event)"></canvas><canvas data-type="figure" draggable="true" ondragstart="api.drag(event)" data-figure="C"></canvas></section></main>  
+    <script>var api = new Api();</script>
+
+</body></html>

@@ -1,0 +1,107 @@
+/*
+Mario Junquera Rojas UO287557
+*/
+/*Especificidad: 001*/
+section{
+    border: none;
+}
+/*Especificidad: 011*/
+section[data-type = "mapa dinamico"] {
+    margin-top: 5%;
+    height: 50em;
+}
+/*Especificidad: 011*/
+section[data-type = "ruta xml"]{
+    margin: 2%;
+    color:black;
+    background-color: #C2B280;
+}
+/*Especificidad: 011*/
+section[data-type = "hito"]{
+    color:black;
+    background-color: yellow;
+    margin: 1%;
+}
+/*Especificidad: 011*/
+section[data-type = "ruta xml"] a {
+    display: block;
+    width: 70%;
+    overflow: hidden;
+}
+/*Especificidad: 022*/
+section[data-type = "ruta xml"] h4[data-type = nombre] {
+    font-size: larger;
+    height: auto;
+    color:black;
+    background-color: #fff;
+}
+/*Especificidad: 022*/
+section[data-type = "ruta xml"] p[data-type = recomendacion] {
+    font-size: larger;
+    height: auto;
+    color:black;
+    background-color: #fff;
+}
+/*Especificidad: 012*/
+section[data-type = "ruta xml"] img{
+    max-width: 15%;
+    max-height: 15%;
+}
+/*Especificidad: 001*/
+svg {
+    width: 45em;
+    height: 27em;
+}
+/*Especificidad: 011*/
+section[data-type = carrusel]{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+/*Especificidad: 012*/
+section[data-type = carrusel] h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+/*Especificidad: 011*/
+img[data-type = 'img carrusel']{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+/*Especificidad: 012*/
+section[data-type = carrusel] button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    color:black;
+    background-color: #fff;
+    font-size: 1em;
+}
+/*Especificidad: 022*/
+section[data-type = carrusel] button:active {
+    transform: scale(1.1);
+}
+/*Especificidad: 012*/ 
+button[data-action=prev] {
+    top: 50%;
+    left: 2%;
+}
+/*Especificidad: 012*/ 
+button[data-action=next] {
+    top: 50%;
+    right: 2%;
+}
+
