@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Escritorio Virtual - Noticias</title>
+    <meta name="author" content="Mario Junquera Rojas">
+    <meta name="keywords" content="aquí cada documento debe tener la lista
+    de las palabras clave del mismo separadas por comas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/noticias.css">
+    <link rel="icon" href="multimedia/favicon.ico">
+    <script src="js/noticias.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual - Noticias</h1>
+        <nav>
+            <a href="index.html" accesskey="I" tabindex="1"> Inicio</a>
+            <a href="sobremi.html" accesskey="S" tabindex="2"> Sobre Mi</a>
+            <a href="noticias.html" accesskey="N" tabindex="3"> Noticias</a>
+            <a href="agenda.html" accesskey="A" tabindex="4"> Agenda</a>
+            <a href="meteorologia.html" accesskey="M" tabindex="5"> Meteorología</a>
+            <a href="viajes.php" accesskey="V" tabindex="6"> Viajes</a>
+            <a href="juegos.html" accesskey="J" tabindex="7"> Juegos</a>
+        </nav>
+    </header>
+    <h2>Noticias</h2>    
+    <script>var noticias = new Noticias;</script><main><p>Este navegador soporta el API File</p><p><input type="file" onchange="noticias.readInputFile(this.files);"></p><section data-type="noticia"><h3 data-type="titulo">El aumento de la producción científica desborda de papeleo a la Universidad</h3><p data-type="subtitulo">El Rector promete cambiar el servicio de gestión y contratar personal</p><p data-type="contenido">A la Universidad de Oviedo le desborda el papeleo por el gran salto dado en investigación</p><p data-type="autor">Mónica Salas</p></section><section data-type="noticia"><h3 data-type="titulo">La Universidad presume de equipos deportivos en una jornada ilusionante</h3><p data-type="subtitulo">La presentación tuvo lugar en el polideportivo universitario</p><p data-type="contenido">Ayer, por primera vez, todos los equipos deportivos de la Universidad de Oviedo realizaron una presentación conjunta</p><p data-type="autor">Juan Sanchez</p></section><section data-type="noticia"><h3 data-type="titulo">Investigadores que se van por unos meses al otro lado, a la empresa</h3><p data-type="subtitulo">Deberían hacerlo todos los científicos, afirman un psicólogo y una informática</p><p data-type="contenido">Una cosa es colaborar con una empresa y otra bien diferente es poder trabajar en ella durante unos meses</p><p data-type="autor">Manuel Rodriguez</p></section></main><section data-type="creador de noticias"><h2>Agregar una noticia</h2><p>Titulo: <input data-type="titulo" type="text"></p><p>Subtitulo: <input data-type="subtitulo" type="text"></p><p>Contenido: <input data-type="contenido" type="text"></p><p>Autor: <input data-type="autor" type="text"></p><button onclick="noticias.addNoticia();">Añadir noticia</button></section>
+
+</body></html>

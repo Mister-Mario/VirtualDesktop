@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Escritorio Virtual - Viajes</title>
+    <meta name="author" content="Mario Junquera Rojas">
+    <meta name="keywords" content="aquí cada documento debe tener la lista
+    de las palabras clave del mismo separadas por comas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/viajes.css">
+    <link rel="icon" href="multimedia/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+    <script src="js/viaje.js"></script>
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/55/4/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/55/4/intl/es_ALL/util.js"></script></head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio Virtual - Viajes</h1>
+        <nav>
+            <a href="index.html" accesskey="I" tabindex="1"> Inicio</a>
+            <a href="sobremi.html" accesskey="S" tabindex="2"> Sobre Mi</a>
+            <a href="noticias.html" accesskey="N" tabindex="3"> Noticias</a>
+            <a href="agenda.html" accesskey="A" tabindex="4"> Agenda</a>
+            <a href="meteorologia.html" accesskey="M" tabindex="5"> Meteorología</a>
+            <a href="viajes.php" accesskey="V" tabindex="6"> Viajes</a>
+            <a href="juegos.html" accesskey="J" tabindex="7"> Juegos</a>
+        </nav>
+    </header>
+    <h2>Viajes</h2>
+    <main>
+        <section data-type="carrusel"> <h3>Carrusel de Imágenes</h3><img data-type="img carrusel" alt="S11A" src="https://live.staticflickr.com/65535/53305393922_17a4614e13_b.jpg"><img data-type="img carrusel" alt="casas de antiguo pueblo de Chebika Oasis de Chebika As-Sabikah cordillera del Altas Túnez 08" src="https://live.staticflickr.com/65535/47616509601_83b9de2376_b.jpg"><img data-type="img carrusel" alt="Metlaoui-Tunis DC in Sousse" src="https://live.staticflickr.com/65535/53054091922_a1d3b8d4a2_b.jpg"><img data-type="img carrusel" alt="Tunisia 30" src="https://live.staticflickr.com/65535/52949455656_f2effda9e2_b.jpg"><img data-type="img carrusel" alt="Tunisia 29" src="https://live.staticflickr.com/65535/52949450761_80e252ffde_b.jpg"><img data-type="img carrusel" alt="Tunisia 28" src="https://live.staticflickr.com/65535/52949831550_8058620283_b.jpg"><img data-type="img carrusel" alt="Prblms" src="https://live.staticflickr.com/65535/52945732928_2ac2d84089_b.jpg"><img data-type="img carrusel" alt="Tunisia 27" src="https://live.staticflickr.com/65535/52929131406_d717fb0697_b.jpg"><img data-type="img carrusel" alt="Tunisia 25" src="https://live.staticflickr.com/65535/52929569848_7579fba7b5_b.jpg"><img data-type="img carrusel" alt="Tunisia 26" src="https://live.staticflickr.com/65535/52929131391_2f4169b9b6_b.jpg"><button data-action="next" onclick="mapa.nextSlide()"> &gt; </button><button data-action="prev" onclick="mapa.prevSlide()"> &lt; </button></section>        <section data-type="cambio moneda"> <h3>Cambio moneda</h3><p> 1 EUR son 3.3945675177 TND</p></section>        <section data-type="mapa estatico">
+            <h3>Mapa estático</h3>
+            <button onclick="mapa.getMapaEstaticoGoogle()">Cargar mapa estático</button>
+        </section>
+        <section id="mapa" data-type="mapa dinamico">
+            <h3>Mapa dinámico</h3>
+            <button onclick="mapa.getMapaDinamico()">Cargar mapa dinámico</button>
+        </section>
+        <section data-type="carga ficheros">
+            <h3>Carga ficheros</h3>
+        <p>Este navegador soporta el API File</p><p><input type="file" onchange="mapa.readInputFile(this.files)" multiple=""></p></section>
+        <section data-type="rutas xml"><h3>Rutas por Túnez</h3><section data-type="ruta xml" data-i="0"><p data-type="nombre">Nombre: Túnez capital</p><p>Tipo: Arquitectónica</p><p>Medio de Transporte: A pie</p><p>Duración: 1D</p><p>Agencia: Sin agencia</p><p>Descripción: 
+            La capital tunecina, es, podríamos decir, un tercio mediterránea, un tercio europea y un tercio africana. Esta ciudad tiene algunos de los contrastes más fuertes e interesantes del norte de África.
+             La mezcla de culturas e influencias es clara y un paseo por sus calles lo demuestra.
+        Mezquita histórica e importante universidad islámica, la más antigua de Túnez, con un minarete de 43 m.Es el museo de las artes y el patrimonio tradicional de Túnez. Su arquitectura es uno de los ejemplos más hermosos de las construcciones del siglo XVII, ubicado en el centro de la Medina de Túnez. En su colección se muestran la herencia de los años 
+            y el nombre del museo es el del antiguo dueño del palacio en el que se encuentra instalado.Construido dentro de uno de los mejores palacios del país, el Museo Bardo contiene una de las mayores colecciones de mosaicos romanos del mundo,
+             los cuales solían decorar las presuntuosas casas romanas que puede que visites en tu recorrido por el país.</p><p>Personas Adecuadas: Todo tipo de personas</p><p>Lugar de Inicio: Túnez</p><p>Dirección de Inicio: 30 Rue Jamaa Ez Zitouna, Tunis, Túnez</p><p>Coordenadas: Latitud=10.171288497323301, Longitud=36.79774470644965, Altitud=4</p><p>Referencias:</p><a href="https://www.google.com/maps/place/Mezquita+Zitouna/@36.7955421,10.1698796,17z/data=!4m6!3m5!1s0x12fd34754f0de50d:0xd6055eb2c24a4f31!8m2!3d36.7973267!4d10.1712377!16s%2Fm%2F05f50wj?entry=ttu" target="_blank">https://www.google.com/maps/place/Mezquita+Zitouna/@36.7955421,10.1698796,17z/data=!4m6!3m5!1s0x12fd34754f0de50d:0xd6055eb2c24a4f31!8m2!3d36.7973267!4d10.1712377!16s%2Fm%2F05f50wj?entry=ttu</a><br><a href="https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html" target="_blank">https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html</a><br><a href="https://sobretunez.com/2009/11/05/dar-ben-abdallah-el-museo-de-las-costumbres/" target="_blank">https://sobretunez.com/2009/11/05/dar-ben-abdallah-el-museo-de-las-costumbres/</a><br><section data-type="hito"><p>Hito Nombre: Mezquita Zitouna</p><p>Descripción: Mezquita histórica e importante universidad islámica, la más antigua de Túnez, con un minarete de 43 m.</p><p>Coordenadas: Latitud=10.171288497323301, Longitud=36.79774470644965, Altitud=4</p><p>Distancia al Hito Anterior: 0 km</p><img src="xml/multimedia/Mezquita.jpeg" alt="Mezquita.jpeg/"></section><section data-type="hito"><p>Hito Nombre: Palacio Dar ben Abdallah</p><p>Descripción: Es el museo de las artes y el patrimonio tradicional de Túnez. Su arquitectura es uno de los ejemplos más hermosos de las construcciones del siglo XVII, ubicado en el centro de la Medina de Túnez. En su colección se muestran la herencia de los años 
+            y el nombre del museo es el del antiguo dueño del palacio en el que se encuentra instalado.</p><p>Coordenadas: Latitud=10.173785474972679, Longitud=36.79444648864582, Altitud=4</p><p>Distancia al Hito Anterior: 4.6 km</p><img src="xml/multimedia/Dar_Ben_Abdallah.jpg" alt="Dar_Ben_Abdallah.jpg/"></section><section data-type="hito"><p>Hito Nombre: Le musée national du Bardo</p><p>Descripción: Construido dentro de uno de los mejores palacios del país, el Museo Bardo contiene una de las mayores colecciones de mosaicos romanos del mundo,
+             los cuales solían decorar las presuntuosas casas romanas que puede que visites en tu recorrido por el país.</p><p>Coordenadas: Latitud=10.134648985557394, Longitud=36.809444827906646, Altitud=4</p><p>Distancia al Hito Anterior: 0.6 km</p><img src="xml/multimedia/museo.png" alt="museo.png/"></section><p data-type="recomendacion">Recomendación: 8</p></section><section data-type="ruta xml" data-i="1"><p data-type="nombre">Nombre: Alrededores de Sfax</p><p>Tipo: PaisajísticaArquitectónica</p><p>Medio de Transporte: Coche y ferry</p><p>Duración: 1D</p><p>Agencia: Sin agencia</p><p>Descripción: 
+            Ruta que combina mar y tierra recorrindo lugares historicos del pais de Túnez y sus playas.
+        El anfiteatro en El Djem fue construido por los romanos bajo las órdenes del procónsul Gordiano, quién fue proclamado emperador en Thysdrus alrededor del 238 y era principalmente utilizado para espectáculos de gladiadores y carreras de carros de pequeño formato. La Mezquita más importante de la ciudad de SfaxLa sensación de pasar unos días en las islas de Kerkennah es similar a la de perderse en otras orillas del Mar Mediterráneo, ya sea en Sicilia, Cerdeña o cualquier isla griega.</p><p>Personas Adecuadas: Personas en buena forma física</p><p>Lugar de Inicio: Sfax</p><p>Dirección de Inicio: Anfiteatro de El Djem</p><p>Coordenadas: Latitud=10.706617336438631, Longitud=35.2982756564453, Altitud=35.3</p><p>Referencias:</p><a href="https://www.google.com/maps/place/Anfiteatro+de+El+Djem/@35.2964865,10.7043254,17z/data=!3m1!4b1!4m6!3m5!1s0x1301fc9cdf4f5df5:0xf56c08802fb823a8!8m2!3d35.2964821!4d10.7069003!16s%2Fg%2F120rrdck?entry=ttu" target="_blank">https://www.google.com/maps/place/Anfiteatro+de+El+Djem/@35.2964865,10.7043254,17z/data=!3m1!4b1!4m6!3m5!1s0x1301fc9cdf4f5df5:0xf56c08802fb823a8!8m2!3d35.2964821!4d10.7069003!16s%2Fg%2F120rrdck?entry=ttu</a><br><a href="https://www.somoutdoors.com/lugares-donde-viajar/tunez-por-tu-cuenta/" target="_blank">https://www.somoutdoors.com/lugares-donde-viajar/tunez-por-tu-cuenta/</a><br><a href="https://blog-tunez.com/otros-destinos-de-tunez/islas-kerkennah/" target="_blank">https://blog-tunez.com/otros-destinos-de-tunez/islas-kerkennah/</a><br><a href="https://en.wikipedia.org/wiki/Great_Mosque_of_Sfax" target="_blank">https://en.wikipedia.org/wiki/Great_Mosque_of_Sfax</a><br><section data-type="hito"><p>Hito Nombre: Anfiteatro en El Djem</p><p>Descripción: El anfiteatro en El Djem fue construido por los romanos bajo las órdenes del procónsul Gordiano, quién fue proclamado emperador en Thysdrus alrededor del 238 y era principalmente utilizado para espectáculos de gladiadores y carreras de carros de pequeño formato. </p><p>Coordenadas: Latitud=10.706617336438631, Longitud=35.2982756564453, Altitud=35.3</p><p>Distancia al Hito Anterior: 0 km</p><img src="xml/multimedia/djemjpg.jpg" alt="djemjpg.jpg/"></section><section data-type="hito"><p>Hito Nombre: Great Mosque of Sfax</p><p>Descripción: La Mezquita más importante de la ciudad de Sfax</p><p>Coordenadas: Latitud=10.761733371909365, Longitud=34.73615780480023, Altitud=0</p><p>Distancia al Hito Anterior: 65 km</p><img src="xml/multimedia/SfaxMosque.jpg" alt="SfaxMosque.jpg/"></section><section data-type="hito"><p>Hito Nombre: Islas Kerkennah</p><p>Descripción: La sensación de pasar unos días en las islas de Kerkennah es similar a la de perderse en otras orillas del Mar Mediterráneo, ya sea en Sicilia, Cerdeña o cualquier isla griega.</p><p>Coordenadas: Latitud=11.140731886583168, Longitud=34.72991197588472, Altitud=0</p><p>Distancia al Hito Anterior: 55 km</p><img src="xml/multimedia/kerkennah.jpg" alt="kerkennah.jpg/"></section><p data-type="recomendacion">Recomendación: 7</p></section><section data-type="ruta xml" data-i="2"><p data-type="nombre">Nombre: Douz</p><p>Tipo: Paisajística</p><p>Medio de Transporte: A pie y camello</p><p>Duración: 1D</p><p>Agencia: sahara-tunisia</p><p>Descripción: 
+            Ruta guiada por el desierto del Sahara
+        Comienzo de la ruta donde se ubica la agencia turísticaEntrada al desierto del SaharaEl desierto del Sahara es el desierto cálido más grande del mundo, con más de 9 400 000 km2 de superficie. </p><p>Personas Adecuadas: Personas en buena forma física</p><p>Lugar de Inicio: Sahara-tunisia</p><p>Dirección de Inicio: Souk Douz, 4260, Túnez</p><p>Coordenadas: Latitud=9.025019626580125, Longitud=33.457376514557566, Altitud=64</p><p>Referencias:</p><a href="https://www.sahara-tunisia.com/" target="_blank">https://www.sahara-tunisia.com/</a><br><a href="https://es.wikipedia.org/wiki/S%C3%A1hara" target="_blank">https://es.wikipedia.org/wiki/S%C3%A1hara</a><br><a href="https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html" target="_blank">https://www.economiadigital.es/tendenciashoy/destinos/tunez-de-la-capital-al-desierto-en-un-roadtrip-de-10-dias_20076846_102.html</a><br><a href="https://www.google.com/maps/place/Sahara+Desert+Tunisia+%E1%83%A6/@33.4578928,9.0217406,16.75z/data=!4m15!1m8!3m7!1s0x125687f0a48f8aa3:0xf20af06731ebe68d!2zRG91eiwgVMO6bmV6!3b1!8m2!3d33.4614354!4d9.0294708!16zL20vMDQzMXo4!3m5!1s0x125687f0052ca891:0x547cf34c40e7aa1f!8m2!3d33.4571621!4d9.0250329!16s%2Fg%2F11ft2cj7zt?entry=ttu" target="_blank">https://www.google.com/maps/place/Sahara+Desert+Tunisia+%E1%83%A6/@33.4578928,9.0217406,16.75z/data=!4m15!1m8!3m7!1s0x125687f0a48f8aa3:0xf20af06731ebe68d!2zRG91eiwgVMO6bmV6!3b1!8m2!3d33.4614354!4d9.0294708!16zL20vMDQzMXo4!3m5!1s0x125687f0052ca891:0x547cf34c40e7aa1f!8m2!3d33.4571621!4d9.0250329!16s%2Fg%2F11ft2cj7zt?entry=ttu</a><br><section data-type="hito"><p>Hito Nombre: Sahara Desert Tunisia ღ</p><p>Descripción: Comienzo de la ruta donde se ubica la agencia turística</p><p>Coordenadas: Latitud=9.025019626580125, Longitud=33.457376514557566, Altitud=64</p><p>Distancia al Hito Anterior: 6 km</p><img src="xml/multimedia/compañia.png" alt="compañia.png/"></section><section data-type="hito"><p>Hito Nombre: La Porta del Sahara</p><p>Descripción: Entrada al desierto del Sahara</p><p>Coordenadas: Latitud=9.038192239017691, Longitud=33.437107814794864, Altitud=63</p><p>Distancia al Hito Anterior: 6 km</p><img src="xml/multimedia/puertaSahara.jpg" alt="puertaSahara.jpg/"></section><section data-type="hito"><p>Hito Nombre: Desierto del Sahara</p><p>Descripción: El desierto del Sahara es el desierto cálido más grande del mundo, con más de 9 400 000 km2 de superficie. </p><p>Coordenadas: Latitud=9.0708610000714013, Longitud=33.479258386747844, Altitud=63</p><p>Distancia al Hito Anterior: 6 km</p><img src="xml/multimedia/deserto-sahara.jpg" alt="deserto-sahara.jpg/"></section><p data-type="recomendacion">Recomendación: 10</p></section></section>
+        <section data-type="rutas svg">
+            <h3>Altimetría de las rutas por Túnez</h3>
+        <svg data-index="0"><polyline points="10,200
+260.0,195.0
+352.0,195.0
+364.0,195.0
+414.0,200
+10,200
+" style="fill:white;stroke:red;stroke-width:4"></polyline><text x="10" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Inicio
+</text><text x="260.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Mezquita Zitouna
+</text><text x="352.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Palacio Dar ben Abdallah
+</text><text x="364.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Le musée national du Bardo
+</text><text x="414.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Final
+</text></svg><svg data-index="1"><polyline points="10,200
+110.0,163.7
+435.0,199.0
+710.0,199.0
+760.0,200
+10,200
+" style="fill:white;stroke:red;stroke-width:4"></polyline><text x="10" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Inicio
+</text><text x="110.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Anfiteatro en El Djem
+</text><text x="435.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Great Mosque of Sfax
+</text><text x="710.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Islas Kerkennah
+</text><text x="760.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Final
+</text></svg><svg data-index="2"><polyline points="10,200
+380.0,135.0
+500.0,136.0
+620.0,136.0
+670.0,200
+10,200
+" style="fill:white;stroke:red;stroke-width:4"></polyline><text x="10" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Inicio
+</text><text x="380.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Sahara Desert Tunisia ღ
+</text><text x="500.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+La Porta del Sahara
+</text><text x="620.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Desierto del Sahara
+</text><text x="670.0" y="210.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+Final
+</text></svg></section>
+    </main> 
+    <script>
+        var mapa = new Viajes();
+    </script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU1nr3dm2IoWH0_jdly0i0V2my3ir5UGw"></script>
+
+
+</body></html>

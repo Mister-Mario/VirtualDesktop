@@ -1,0 +1,32 @@
+/*
+Mario Junquera Rojas UO287557
+*/
+
+/* Especifidad 011*/
+section[data-type = noticia]{
+    border: none;
+    color: black;
+    background-color: #fff;
+}
+/* Especifidad 011*/
+h3[data-type = "titulo"]{
+    margin-bottom: 0.5%;
+    font-size: larger;
+}
+/* Especifidad 011*/
+p[data-type = subtitulo]{
+    font-weight: lighter;
+    margin-top: 0.5%;
+} 
+/* Especifidad 011*/
+p[data-type = contenido]{
+    font-weight: lighter;
+}
+/* Especifidad 011*/
+p[data-type = autor]{
+    text-align: right;
+}
+/* Especifidad 011*/
+section[data-type = "creador de noticias"]{
+    border: none;
+}

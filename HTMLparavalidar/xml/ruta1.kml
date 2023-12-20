@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id='Universidad de Oviedo'>
+<Placemark>
+<name>Túnez capital</name>
+<description>
+            La capital tunecina, es, podríamos decir, un tercio mediterránea, un tercio europea y un tercio africana. Esta ciudad tiene algunos de los contrastes más fuertes e interesantes del norte de África.
+             La mezcla de culturas e influencias es clara y un paseo por sus calles lo demuestra.
+        </description>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+10.171288497323301,36.79774470644965,4
+10.171288497323301,36.79774470644965,4
+10.173785474972679,36.79444648864582,4
+10.134648985557394,36.809444827906646,4
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style id='redLine'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
