@@ -104,6 +104,13 @@ button[data-action=next] {
     top: 50%;
     right: 2%;
 }
+
+/*Especificidad: 022*/
+section[data-type='ruta xml'] a:link {
+    color: #270202;
+    /*Hereda background de section[data-type='ruta xml']*/
+}
+
 /*Especificidad: 022*/
 section[data-type='ruta xml'] a:visited {
     color: black;
